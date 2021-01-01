@@ -1,0 +1,18 @@
+<h1 class="text-center">User Comments</h1>
+
+<br>
+<button type="submit" class="btn btn-danger" (click)="addUser()">Add User</button>
+<table class="table table-bordered">
+	<tr class="bg-primary">
+		<th>Post Id</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Comment</th>
+	</tr>
+	<tr *ngFor="let user of users">
+		<td>{{user.postId}}</td>
+		<td>{{user.name}}</td>
+		<td>{{user.email}}</td>
+		<td>{{user.body}}</td>
+	</tr>
+</table>
